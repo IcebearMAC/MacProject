@@ -1,0 +1,17 @@
+﻿@model PersonnelManagmentSystemV1.ViewModels.UserViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    @Html.Partial("_DisplayUser", Model)
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditUser", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
